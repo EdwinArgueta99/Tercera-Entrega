@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background-color: aliceblue;
+}
+
+/*estilo de carusel mas el responsive*/
+.custom-carousel {
+    height: 400px;
+    overflow: hidden;
+}
+@media (max-width: 700px) {
+    .custom-carousel {
+      height: 200px;
+    }
+}
+
+/*estilo del slider "listo para viajar"*/
+.custom-slider {
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #E4F2FC;
+    padding: 10px;
+}
+.custom-slider h1{
+    background-color: #E4F2FC;
+    border-radius: 10px;
+}
+.custom-slider p{
+    background-color:#E4F2FC;
+    border-radius: 10px;
+}
+
+/*responsive del iframe video*/
+.custom-video{
+    background-color: #E4F2FC;
+}
+
+@media (max-width: 766px) {
+    .custom-iframe iframe {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:100%;
+    }
+}
+
+@media (max-width: 585px){
+    .custom-iframe iframe {
+       width: 100lvw;
+    }
+}
+
+/*estilo de las card*/
+
+.card-container {
+    position: relative;
+    text-align: center; 
+}
+  
+.card-link {
+    position: relative;
+    display: inline-block;
+}
+  
+.card-img-top {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+  
+.card-link-click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    color: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(0px); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.card-link-click:hover {
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    
+}
+
+  
+@media screen and (max-width: 768px) {
+    .card-link-click {
+      font-size: 14px;
+    }
+}
+
+/*estilo de testimonios*/
+.comentarios {
+    overflow: hidden; 
+}
+
+.footer-redes{
+    height: auto;
+    width:5cqw
+}
+
+/*ediciobn de estilo de planes */
+.seccion-custome{
+    margin: 10px;
+}
+
+.img-mobile{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .img-mobile{
+        display: flex;
+    }
+    .img-desktop{
+        display: none;
+    }
+}
+
+/*old css*/
+/*preguntas frecuentes */
+.preguntasfreq {
+    text-align: center;
+  }
+
+.preguntasfreq div {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.preguntasfreq div h3{
+    border: 1px solid black;
+}
+
+
+
+
+/*Estilo del formulario*/
+
+
+ .h1-formulario{
+    text-align: center;
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    background-color: #daf9ff;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/*aqui  se toman todos los elementos de todo el formulario*/
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.acercadenosotros{
+    text-align: center;
+    border: 2px black;
+}
+
+.contactanos-h1{
+    text-align: center;
+}
+
+.gracias {
+    text-align: center;
+    background-color: #666;
+    align-content: center;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 30%;
+}
+
+.gracias div {
+    display: block;
+}
+
+.gracias img{
+    width: 100x;
+    height: 100px;
+}
