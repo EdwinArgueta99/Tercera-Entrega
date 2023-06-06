@@ -1,0 +1,58 @@
+/*estilo del responsive del carusel*/
+@media (max-width: 700px) {
+    .custom-carousel .custom-carousel {
+      height: 200px;
+    }
+}
+
+/*responsive del iframe video*/
+@media (max-width: 766px) {
+    .custom-iframe iframe {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+    }
+}
+@media (max-width: 585px) {
+    .custom-iframe iframe {
+      width: 100lvw;
+    }
+}
+
+/*responsive de las cards*/
+@media screen and (max-width: 768px) {
+    .card-link-click {
+      font-size: 14px;
+    }
+}
+
+/*responsive de la paquina de paquetes */
+@media screen and (max-width: 768px) {
+    .img-mobile {
+      display: flex;
+    }
+    .img-desktop {
+      display: none;
+    }
+}
+
+/*responsive de contactanos */
+/*mediaqueries */
+  
+@media (max-width: 767px) {
+    .custome-contactanos {
+      flex-direction: column;
+    }
+  
+    .mapa {
+      height: 300px;
+      width: 100%;
+    }
+  
+    .form {
+      margin-top: 20px;
+      width: 100%;
+    }
+}
+  

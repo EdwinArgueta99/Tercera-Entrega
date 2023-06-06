@@ -1,5 +1,3 @@
-/*impots*/
-/*imports reseteo*/
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +10,11 @@
   height: 400px;
   overflow: hidden;
 }
+@media (max-width: 700px) {
+  .custom-carousel .custom-carousel {
+    height: 200px;
+  }
+}
 
 /*estilo del slider "listo para viajar"*/
 .custom-slider {
@@ -20,20 +23,35 @@
   background-color: #E4F2FC;
   padding: 10px;
 }
-.custom-slider .custom-slider h1 {
-  background-color: #E4F2FC;
-  border-radius: 10px;
-}
-.custom-slider .custom-slider p {
+
+.custom-slider h1 {
   background-color: #E4F2FC;
   border-radius: 10px;
 }
 
-/* color de fondo del video*/
+.custom-slider p {
+  background-color: #E4F2FC;
+  border-radius: 10px;
+}
+
+/*responsive del iframe video*/
 .custom-video {
   background-color: #E4F2FC;
 }
 
+@media (max-width: 766px) {
+  .custom-iframe iframe {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 585px) {
+  .custom-iframe iframe {
+    width: 100lvw;
+  }
+}
 /*estilo de las card*/
 .card-container {
   position: relative;
@@ -72,9 +90,19 @@
   color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 768px) {
+  .card-link-click {
+    font-size: 14px;
+  }
+}
 /*estilo de testimonios*/
 .comentarios {
   overflow: hidden;
+}
+
+.footer-redes {
+  height: auto;
+  width: 5cqw;
 }
 
 /*edicion de estilo de planes */
@@ -86,9 +114,23 @@
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .img-mobile {
+    display: flex;
+  }
+  .img-desktop {
+    display: none;
+  }
+}
+
+/*estilo de de preguntas freccuentas */
+.accordion-body {
+  max-width: 750px; /* Ajusta el valor según sea necesario */
+}
+
 /*estillo de contactanos */
 /*mapa*/
-.mapa {
+.mapa{
   width: 50vw;
   height: 90vh;
   display: flex;
@@ -103,7 +145,7 @@
 }
 
 /*formulario*/
-.form {
+.form{
   width: 50vw;
   height: 90vh;
   display: flex;
@@ -111,71 +153,25 @@
   align-items: center;
 }
 
-.form form {
+.form form{
   width: 100%;
   height: 100%;
   border: 0;
 }
-
-.footer-redes {
-  height: auto;
-  width: 5cqw;
-}
-
-/*estilo de de preguntas freccuentas */
-.accordion-body {
-  max-width: 750px;
-}
-
-/*estilo del responsive del carusel*/
-@media (max-width: 700px) {
-  .custom-carousel .custom-carousel {
-    height: 200px;
-  }
-}
-/*responsive del iframe video*/
-@media (max-width: 766px) {
-  .custom-iframe iframe {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-  }
-}
-@media (max-width: 585px) {
-  .custom-iframe iframe {
-    width: 100lvw;
-  }
-}
-/*responsive de las cards*/
-@media screen and (max-width: 768px) {
-  .card-link-click {
-    font-size: 14px;
-  }
-}
-/*responsive de la paquina de paquetes */
-@media screen and (max-width: 768px) {
-  .img-mobile {
-    display: flex;
-  }
-  .img-desktop {
-    display: none;
-  }
-}
-/*responsive de contactanos */
 /*mediaqueries */
+
 @media (max-width: 767px) {
   .custome-contactanos {
     flex-direction: column;
   }
+
   .mapa {
     height: 300px;
     width: 100%;
   }
+
   .form {
     margin-top: 20px;
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

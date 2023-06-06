@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gracias por tu compra</title>
+    <meta name="description" content="¡Gracias por reservar con Go Travel! Su reserva ha sido confirmada. Prepárese para una experiencia inolvidable con Go Travel.">
+    <meta name="keywords" content="compra, reserva, confirmada, Go Travel, experiencia inolvidable">
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--animate-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--css-->
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
@@ -37,31 +45,42 @@
     </header>
     <!--”Fin delHeader “-->
     <main>
-        <section class="gracias">
-            <div><img src="../assets/checkmarck.png" alt="Logo de confirmacion"></div>
-            <div>
-                <h1>Pago realizado tu boleto es el 00000</h1>
+      <main class="container " data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+        <div class="row justify-content-center m-1">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-center animate__animated animate__heartBeat animate__slow">¡Gracias por reservar con Go Travel!</h2>
+                <p class="card-text text-center">Su reserva ha sido confirmada.</p>
+                <p class="card-text text-center">Número de reserva: 123456</p>
+                <p class="card-text text-center">Fecha de reserva: 3 de junio de 2023</p>
+                <p class="card-text text-center">Total: $499.99</p>
+                <p class="card-text text-center">¡Prepárese para una experiencia inolvidable con Go Travel!</p>
+              </div>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </main>
     <!--footer-->
-    <footer>
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">inicio</a></li>
-            <li class="nav-item"><a href="./Paquetes.html" class="nav-link px-2 text-body-secondary">Compra paquetes</a></li>
-            <li class="nav-item"><a href="./preguntasfrecuentes.html" class="nav-link px-2 text-body-secondary">preguntasfrecuentes</a></li>
-            <li class="nav-item"><a href="./contactactanos.html" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
-          </ul>
-          <ul class="nav justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/?lang=es"><img src="../assets/twitter.png" alt="Twitter" class="footer-redes"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img src="../assets/instagram.png" alt="Instagram" class="footer-redes"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://es-la.facebook.com/"><img src="../assets/facebook.png" alt="Facebook" class="footer-redes"></a></li>
-          </ul>
-        </footer>
-      </div>
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Compra paquetes</a></li>
+        <li class="nav-item"><a href="./preguntasfrecuentes.html" class="nav-link px-2 text-body-secondary">preguntasfrecuentes</a></li>
+        <li class="nav-item"><a href="./contactactanos.html" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
+      </ul>
+      <ul class="nav justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/?lang=es"><img src="../assets/icons/twitter.png" alt="Twitter" class="footer-redes"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img src="../assets/icons/instagram.png" alt="Instagram" class="footer-redes"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><img src="../assets/icons/facebook.png" alt="Facebook" class="footer-redes"></a></li>
+      </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+    <!-- AOS animate On scroll Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+   <!--bootstrap-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+ </body>
 </html>

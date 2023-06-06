@@ -1,0 +1,69 @@
+/*estilo de carusel mas el responsive*/
+.custom-carousel {
+    height: 400px;
+    overflow: hidden;
+}
+
+/*estilo del slider "listo para viajar"*/
+.custom-slider {
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #E4F2FC;
+    padding: 10px;
+    .custom-slider h1 {
+        background-color: #E4F2FC;
+        border-radius: 10px;
+    }
+    .custom-slider p {
+        background-color: #E4F2FC;
+        border-radius: 10px;
+    }
+}
+  
+/* color de fondo del video*/
+.custom-video {
+    background-color: #E4F2FC;
+}
+
+ /*estilo de las card*/
+.card-container {
+    position: relative;
+    text-align: center;
+}
+  
+.card-link {
+    position: relative;
+    display: inline-block;
+}
+  
+.card-img-top {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+  
+.card-link-click {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card-link-click:hover {
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+}
+
+/*estilo de testimonios*/
+  .comentarios {
+    overflow: hidden;
+ }

@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inicio</title>
+    <meta name="keywords" content="viajes, agencia de viajes, paquetes de viaje, transporte, vacaciones, destinos, Roatan, Utila, Guanaja">
+    <meta name="description" content="Disfruta de tus vacaciones con nuestro servicio de transporte o paquetes todo incluido con Go&travel. Ofrecemos una experiencia excepcional para que puedas explorar nuevos destinos, sumergirte en la cultura local o simplemente relajarte y disfrutar de unas merecidas vacaciones.">
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--animate-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--css-->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -42,13 +50,13 @@
         <div id="carouselExampleAutoplaying" class="carousel slide d-block custom-carousel" data-bs-ride="carousel" style="max-width:100%;">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./assets/Artboard 2.png" class="d-block w-100 h-30" alt="Roatan">
+              <img src="./assets/images/Artboard 1.png" class="d-block w-100 h-30" alt="Roatan">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Artboard 1.png" class="d-block w-100 h-30" alt="Utila">
+              <img src="./assets/images/Artboard 2.png" class="d-block w-100 h-30" alt="Utila">
             </div>
             <div class="carousel-item">
-              <img src="./assets/Artboard 3.png" class="d-block w-100 h-30" alt="Guanaja">
+              <img src="./assets/images/Artboard 3.png" class="d-block w-100 h-30" alt="Guanaja">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -60,15 +68,15 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="text-center custom-slider">
-          <h1 class="mb-3 ">Listo para viajar?</h1>
+        <div class="text-center custom-slider" >
+          <h1 class="mb-3 animate__animated animate__bounce" >Listo para viajar?</h1>
           <p class="mb-0">Disfruta de tus vacaciones con nuestro servicio de transporte o paquetes todo incluido con Go&travel, tú eliges!</p>
         </div>    
       </section>
       <!--Fin del carusel-->
       <!--seccion con parrafo y video-->
-      <section class="p-2 custom-iframe custom-video" >
-        <div class="clearfix ">
+      <section class="p-2 custom-iframe custom-video" data-aos="flip-left">
+        <div class="clearfix">
           <iframe class=" col-md-6 float-md-end mb-3 ms-md-3 " width="560" height="315" src="https://www.youtube.com/embed/ByenROCR3cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <p> 
             Si estás buscando una escapada rápida, contamos con billetes de avión de una sola ida y de una sola vuelta para darte la flexibilidad de planificar tu itinerario según tus preferencias. Si prefieres una experiencia más completa, nuestros paquetes de viajes todo incluido son la opción perfecta. Con ellos, disfrutarás de transporte, alojamiento y actividades cuidadosamente seleccionadas, lo que te permitirá sumergirte en la cultura de los destinos que elijas o relajarte en hermosas playas paradisíacas. Sea cual sea tu elección, nuestro equipo de expertos en viajes está aquí para brindarte una experiencia excepcional y ayudarte a crear recuerdos inolvidables en tus vacaciones.
@@ -81,13 +89,13 @@
       <!--Fin de seccion con parrafo y video-->
       <!--cards-->
       <section >
-        <div class="text-center ">
+        <div class="text-center">
           <h2 class="rounded custom-slider">Disfruta de nuestros paquetes</h2>
         </div>
         <div class="card-group">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <div class="card-container">
-              <a class="card-link" href="#"><img src="./assets/Roatan-card.png" class="card-img-top" alt="Roatan logo"></a>
+              <a class="card-link" href="#"><img src="./assets/images/Roatan-card.png" class="card-img-top" alt="Roatan logo"></a>
               <a href="./pages/Paquetes.html"><h5 class="card-link-click">Click para comprar</h5></a>
             </div>
             <div class="card-body">
@@ -96,9 +104,9 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-down">
             <div class="card-container">
-              <a class="card-link" href="#"><img src="./assets/Utila-card.png" class="card-img-top" alt="Roatan logo"></a>
+              <a class="card-link" href="#"><img src="./assets/images/Utila-card.png" class="card-img-top" alt="Roatan logo"></a>
               <a href="./pages/Paquetes.html"><h5 class="card-link-click">Click para comprar</h5></a>
             </div>
             <div class="card-body">
@@ -107,9 +115,9 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-aos="fade-left">
             <div class="card-container">
-              <a class="card-link" href="#"><img src="./assets/Guanaja-card.png" class="card-img-top" alt="Roatan logo"></a>
+              <a class="card-link" href="#"><img src="./assets/images/Guanaja-card.png" class="card-img-top" alt="Roatan logo"></a>
               <a href="./pages/Paquetes.html"><h5 class="card-link-click">Click para comprar</h5></a>
             </div>
             <div class="card-body">
@@ -121,7 +129,7 @@
       </section>
       <!--Fin de cards-->
       <!--Testimonials-->
-      <section class="comentarios">
+      <section class="comentarios" data-aos="fade-up">
         <div class="row d-flex justify-content-center">
           <div class="col-md-10 col-xl-8 text-center">
             <h3 class="mb-4">Testimonials</h3>
@@ -133,7 +141,7 @@
         <div class="row text-center">
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="./assets/Testimonial2.jpg"
+              <img src="./assets/images/Testimonial1.jpg"
                 class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Maria Smantha</h5>
@@ -160,7 +168,7 @@
           </div>
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="./assets/Testimonial1.jpg"
+              <img src="./assets/images/Testimonial2.jpg"
                 class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Lisa Cudrow</h5>
@@ -187,7 +195,7 @@
           </div>
           <div class="col-md-4 mb-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="./assets/Testimonial3.jpg"
+              <img src="./assets/images/Testimonial3.jpg"
                 class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">John Smith</h5>
@@ -217,23 +225,25 @@
       <!--fin de testimonials-->
     </main>
     <!--footer-->
-    <footer>
-      <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">inicio</a></li>
-            <li class="nav-item"><a href="./pages/Paquetes.html" class="nav-link px-2 text-body-secondary">Compra paquetes</a></li>
-            <li class="nav-item"><a href="./pages/preguntasfrecuentes.html" class="nav-link px-2 text-body-secondary">preguntasfrecuentes</a></li>
-            <li class="nav-item"><a href="./pages/contactactanos.html" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
-          </ul>
-          <ul class="nav justify-content-center list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/?lang=es"><img src="./assets/twitter.png" alt="Twitter" class="footer-redes"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img src="./assets/instagram.png" alt="Instagram" class="footer-redes"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><img src="./assets/facebook.png" alt="Facebook" class="footer-redes"></a></li>
-          </ul>
-        </footer>
-      </div>
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">inicio</a></li>
+        <li class="nav-item"><a href="./pages/Paquetes.html" class="nav-link px-2 text-body-secondary">Compra paquetes</a></li>
+        <li class="nav-item"><a href="./pages/preguntasfrecuentes.html" class="nav-link px-2 text-body-secondary">preguntasfrecuentes</a></li>
+        <li class="nav-item"><a href="./pages/contactactanos.html" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
+      </ul>
+      <ul class="nav justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/?lang=es"><img src="./assets/icons/twitter.png" alt="Twitter" class="footer-redes"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><img src="./assets/icons/instagram.png" alt="Instagram" class="footer-redes"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><img src="./assets/icons/facebook.png" alt="Facebook" class="footer-redes"></a></li>
+      </ul>
     </footer>
+    <!-- AOS animate On scroll Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--boootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
