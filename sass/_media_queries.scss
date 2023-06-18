@@ -1,7 +1,7 @@
 /*estilo del responsive del carusel*/
 @media (max-width: 700px) {
-    .custom-carousel {
-      height: 200px;
+    .custom-carousel{
+      height: 30vh;
     }
 }
 
@@ -44,7 +44,6 @@
     .custome-contactanos {
       flex-direction: column;
     }
-  
     .mapa {
       height: 300px;
       width: 100%;
